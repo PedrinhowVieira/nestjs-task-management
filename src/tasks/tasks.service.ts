@@ -43,7 +43,6 @@ export class TasksService {
     const task = await this.getTaskById(id);
     task.status = status;
     await task.save();
-    console.log(task)
     return task;
   }
 }
